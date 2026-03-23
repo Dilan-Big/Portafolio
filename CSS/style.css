@@ -119,10 +119,12 @@ footer {
 }
 
 .boton-contacto:hover, .boton-enviar:hover, .boton-volver:hover {
+
     background-color: #16a085;
 }
 
 .formulario-contenedor {
+
     background-color: #ffffff;
     max-width: 600px; /* Máximo ancho del formulario */
     margin: 0 auto;/* Centrado automático del formulario */
@@ -137,56 +139,40 @@ form {
 }
 
 label {
-/
+
     margin-top: 15px;
-    /* Margen abajo de cada etiqueta */
     margin-bottom: 5px;
-    /* Negrita para los nombres de los campos */
     font-weight: bold;
 }
 
-/* Estilo para las cajas de texto (inputs) y áreas de texto (textarea) */
 input, textarea {
-    /* Padding interno para que el texto no pegue en el borde */
+
     padding: 10px;
-    /* Borde gris claro y delgado */
     border: 1px solid #ccc;
-    /* Bordes del input un poco redondeados */
     border-radius: 4px;
-    /* Tamaño de la fuente al escribir */
     font-size: 1rem;
-    /* Fuente principal */
     font-family: inherit;
 }
 
-/* Efecto al hacer clic dentro de un campo de texto (focus) */
 input:focus, textarea:focus {
-    /* Elimina el borde azul por defecto del navegador */
-    outline: none;
-    /* Reemplaza con nuestro color del tema para indicar qué campo está activo */
+    outline: none;/* Elimina el borde azul por defecto del navegador */
     border-color: #1abc9c;
 }
 
-/* ===== MEDIA QUERIES PARA RESPONSIVE DESIGN (Celulares) ===== */
-
-/* Cuando la pantalla es menor a 768px (tablets y celulares) */
 @media (max-width: 768px) {
-    /* Título principal más pequeño en móviles */
+
     header h1 {
-        /* Reduce a 2rem */
-        font-size: 2rem;
+        font-size: 2rem; /* Titulo principal mas pequeño */
     }
     
-    /* El contenedor principal tendrá menos margen superior/inferior en móvil */
     main {
-        /* Margen de 20px en lugar de 40px */
-        margin: 20px auto;
+        margin: 20px auto; /* El contenedor principal tendra menos margen superior/inferior */
     }
     
-    /* La cuadrícula de hobbies pasa a una sola columna en pantallas muy pequeñas */
+
     .galeria-hobbies {
-        /* Fuerzan a las columnas a tomar 100% en pantallas estrechas si 200px no caben, 
+
+        grid-template-columns: 1fr; /* Fuerzan a las columnas a tomar 100% en pantallas estrechas si 200px no caben, 
            pero con el auto-fit anterior ya funciona bastante bien. Se asegura. */
-        grid-template-columns: 1fr;
     }
 }
