@@ -1,37 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto - Mi Portafolio</title>
-    <link rel="stylesheet" href="/CSS/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="/CSS/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Ponte en contacto</h1>
+      <h1>Ponte en contacto</h1>
     </header>
 
     <main class="main-contacto">
-        <section class="formulario-contenedor">
-            <form action="#" method="POST">
-                
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+      <section class="formulario-contenedor">
+        <form>
+          <label for="nombre">Nombre completo:</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
 
-                <label for="email">Correo electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="tu@correo.com" required>
+          <label for="email">Correo electrónico:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tu@correo.com"
+            required
+          />
 
-                <label for="mensaje">Comentarios / Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <label for="celular">Celular</label>
+          <input
+            type="tel"
+            id="celular"
+            name="celular"
+            placeholder="300 000 0000"
+            required
+          />
 
-                <button type="submit" class="boton-enviar">Enviar Mensaje</button>
-            
-            </form>
-            
-            <a href="index.html" class="boton-volver">Volver al inicio</a>
-        </section>
+          <label for="mensaje">Comentarios / Mensaje:</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            placeholder="Escribe tu mensaje aquí..."
+            required
+          ></textarea>
+
+          <button type="submit" class="boton-enviar">Enviar Mensaje</button>
+        </form>
+
+        <a href="index.html" class="boton-volver">Volver al inicio</a>
+      </section>
     </main>
-
-</body>
+  </body>
 </html>
